@@ -6,7 +6,7 @@ import '../data_source/remote_data_source.dart';
 class RepositoryImpl implements Repository {
   final RemoteDataSource remoteDataSource;
 
-  RepositoryImpl({required this.remoteDataSource});
+  RepositoryImpl(this.remoteDataSource);
 
   @override
   Future<Either<String, List<TaskEntity>>> getTasks() async {
