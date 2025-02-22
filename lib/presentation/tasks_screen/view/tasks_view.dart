@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../app/firebase_service.dart';
 import '../view_model/cubit/tasks_cubit.dart';
 
 class TasksView extends StatelessWidget {
@@ -20,6 +21,9 @@ class TasksView extends StatelessWidget {
                 return Card(
                   color: const Color.fromARGB(255, 87, 120, 93),
                   child: ListTile(
+                    onTap: () {
+                      FirebaseAppDistributionHelper.triggerFeedback();
+                    },
                     leading: Text(
                       state.tasks[index].id.toString(),
                       style: TextStyle(fontSize: 20, color: Colors.black),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "556150346698",
+    "project_id": "sprints-clean-arch-test",
+    "storage_bucket": "sprints-clean-arch-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556150346698:android:1ee75ea25e151fff467533",
+        "android_client_info": {
+          "package_name": "com.example.sprints_clean_arch_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDsdI_05E56BjHzhuZWlYhfrzzhgmgUSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
