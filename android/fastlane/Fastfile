@@ -19,7 +19,7 @@ platform :android do
 
   desc "lane for android firebase app distribution"
   lane :distribute_with_firebase do
-    sh "flutter build apk --release --build-name=1.0.0 --build-number=7 --no-tree-shake-icons"
+    sh "flutter build apk --release --build-name=1.0.0 --build-number=8 --no-tree-shake-icons"
     puts "Good job yara, you just build the apk ❤✨👸"
     gradle(
     task: 'assemble',
@@ -32,7 +32,7 @@ platform :android do
     android_artifact_type: "APK",
     firebase_cli_token: "1//09FqWPBwbAYfSCgYIARAAGAkSNwF-L9IrHomolhHTqQcUWFi3znhBqXARMmQrnHtsRWi3FemeKQ-VPrFMHiv0KNcPzPgO-SuLxSE",
     android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
-    release_notes: "this is automated beta testing using fastlane... by yara;), i can change this each time i add a new release to firebase app distribution..., this my second time woohoo"
+    release_notes: "automated beta testing on firebase app distribution..."
     )
     puts "Good job yara, Everything works fine ❤✨👸✔"
   end
